@@ -1,7 +1,10 @@
 'use strict'
 
-console.log('webpack está funcionando')
+import React from 'react'
+import { render } from 'react-dom'
+import Title from './app'
 
-var sum = require('./app')
-
-console.log(sum(1, 2))
+render(
+    <Title />,
+    document.querySelector('[data-js="app"]')
+)
